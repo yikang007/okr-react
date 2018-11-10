@@ -1,0 +1,36 @@
+.post{
+    margin-left: 310px;
+    margin-top: 20px;
+    width: 610px;
+    /* height: 367px; */
+    background:#ffffff;
+    border-radius: 4px;
+    padding-bottom: 10px;
+}
+.post-title{
+    margin-left: 20px;
+    padding-top: 16px;
+}
+.post-box{
+    margin-left: 20px;
+    /* padding-top: 16px; */
+}
+.post-box input{
+    display: block;
+    margin-top: 10px;
+    width: 542px;
+    height: 80px;
+}
+.post-bottom{
+    margin-left: 495px;
+    margin-top: 10px;
+}
+
+.post-bottom input{
+    width:70px;
+    height:33px;
+    background:rgba(238,238,238,1);
+    border-radius:4px;
+    border: none;
+    color: #6c8787;
+}

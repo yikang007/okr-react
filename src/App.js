@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Route, Switch} from 'react-router-dom';
+import Header from './components/Header/Header';
+import User from './pages/User/User';
+import Index from './pages/Index/Index';
+import Detail from './pages/Detail/Detail';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+    
+        <Router>
+          <Switch>
+            <Route path='/' exact component={Index}></Route>
+            {/* <Route path='/index' exact component={Index}></Route> */}
+            <Route path='/user' exact component={User}></Route>
+            <Route path='/detail' exact component={Detail}></Route>
+          </Switch>
+        </Router>
       </div>
     );
   }

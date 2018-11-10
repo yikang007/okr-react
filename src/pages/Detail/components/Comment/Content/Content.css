@@ -1,0 +1,31 @@
+.comment-object{
+    width: 610px;
+    /* margin-left: 310px; */
+    margin-top: 20px;
+    border-radius: 4px;
+    background: white;
+}
+
+.comment-object-top{
+    width: 574px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 18px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.comment-object-top img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    clear: both;
+}
+.contents {
+    width: 574px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #F3F3F3;
+}

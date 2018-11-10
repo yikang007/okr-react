@@ -1,0 +1,35 @@
+.user-top{
+    width: 920px;
+    height: 300px;
+    margin-left: 310px;
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #ffffff;
+    background-image: url("https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=dcd9ddf4302ac65c67506e75cbc29e29/b999a9014c086e06fbcb3edf07087bf40bd1cbc7.jpg")
+}
+
+.user-top img{
+    width: 146px;
+    height: 146px;
+    margin-left: 40px;
+    margin-top: 100px;
+    float: left;
+}
+.user-top span{
+    font-size: 24px;
+    float: left;
+    margin-top: 180px;
+}
+
+.user-top button{
+    float: right;
+    margin-top: 220px;
+    margin-right: 100px;
+    width: 124px;
+    height: 34px;
+    border: 1px solid #4A90E2;
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: #4A90E2;
+    cursor: pointer;
+}
