@@ -22,17 +22,17 @@ class Header extends Component {
     register = () => {
         this.setState({ visibles: !this.state.visibles });
     }
-    
+
     close = () => {
         this.setState({ visible: !this.state.visible });
-        
+
     }
     closes = () => {
         this.setState({ visibles: !this.state.visibles });
     }
 
     render() {
-        var { visible,visibles } = this.state;
+        var { visible, visibles } = this.state;
 
         return <div className="header">
             <div className="header-box">
@@ -42,38 +42,42 @@ class Header extends Component {
                     <span className="register" onClick={this.register}>注册</span>
                 </div>
 
-                <div className="mask" style={{ display: visible ? 'none' : 'block' }}></div>
-                <div className="modal" style={{ display: visible ? 'none' : 'block' }}>
-                    <div className="modal-title"><input onClick={this.close} type="image" src="https://github.com/diaodiao007/okr/blob/master/cha.jpg?raw=true" /></div>
-                    <div className="modal-land">登陆</div>
-                    <div className="input-box">
-                        <input name="phone" autocomplete="off" placeholder="电话号码" /></div>
-                    <div className="input-box">
-                        <input name="password" autocomplete="off" placeholder="密码" /></div>
-                    <div className="forget">忘记密码？</div>
-                    <div className="modal-bottom">
-                        <input id="login" type="submit" value="登陆" />
+                <div style={{ display: visible ? 'none' : 'block' }}>
+                    <div className="mask" ></div>
+                    <div className="modal">
+                        <div className="modal-title"><input onClick={this.close} type="image" src="https://github.com/diaodiao007/okr/blob/master/cha.jpg?raw=true" /></div>
+                        <div className="modal-land">登陆</div>
+                        <div className="input-box">
+                            <input name="phone" autocomplete="off" placeholder="电话号码" /></div>
+                        <div className="input-box">
+                            <input name="password" autocomplete="off" placeholder="密码" /></div>
+                        <div className="forget">忘记密码？</div>
+                        <div className="modal-bottom">
+                            <input id="login" type="submit" value="登陆" />
+                        </div>
+                        <div className="modal-bottom-2">没有账号?<span className="register">注册</span></div>
                     </div>
-                    <div className="modal-bottom-2">没有账号?<span className="register">注册</span></div>
                 </div>
-                
-                <div className="masks" style={{ display: visibles ? 'none' : 'block' }}></div>
-                <div className="modal-2" style={{ display: visibles ? 'none' : 'block' }}>
-                    <div className="modal-title"><input onClick={this.closes} type="image" src="https://github.com/diaodiao007/okr/blob/master/cha.jpg?raw=true" /></div>
-                    <div className="modal-land">注册</div>
-                    <div className="input-box">
-                        <input name="phone" autocomplete="off" placeholder="手机号码" /></div>
-                    <div className="input-box" >
-                        <input name="password" autocomplete="off" placeholder="请输入您的密码" /></div>
-                    <div className="input-box">
-                        <input name="token" autocomplete="off" placeholder="请输入6位验证码" />
-                        <span className="gain">获取验证码</span>
-                        <span className="gain-1">请在60秒内输入验证码</span>
+
+                <div style={{ display: visibles ? 'none' : 'block' }}>
+                    <div className="mask"></div>
+                    <div className="modal-2">
+                        <div className="modal-title"><input onClick={this.closes} type="image" src="https://github.com/diaodiao007/okr/blob/master/cha.jpg?raw=true" /></div>
+                        <div className="modal-land">注册</div>
+                        <div className="input-box">
+                            <input name="phone" autocomplete="off" placeholder="手机号码" /></div>
+                        <div className="input-box" >
+                            <input name="password" autocomplete="off" placeholder="请输入您的密码" /></div>
+                        <div className="input-box">
+                            <input name="token" autocomplete="off" placeholder="请输入6位验证码" />
+                            <span className="gain">获取验证码</span>
+                            <span className="gain-1">请在60秒内输入验证码</span>
+                        </div>
+                        <div className="modal-bottom">
+                            <input id="register" type="submit" value="注册" />
+                        </div>
+                        <div className="modal-bottom-2">已有账号?<span className="landing">登陆</span></div>
                     </div>
-                    <div className="modal-bottom">
-                        <input id="register" type="submit" value="注册"/>
-                    </div>
-                    <div className="modal-bottom-2">已有账号?<span className="landing">登陆</span></div>
                 </div>
             </div>
 
