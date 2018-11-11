@@ -33,14 +33,14 @@
     /* clear: both; */
     color:rgba(153,153,153,1);
 }
-.contents{
+.okr-content{
     margin-top: 10px;
     width: 574px;
     height: 44px;
     margin-left: 18px;
     overflow: hidden;
 }
-.contents a{
+.okr-content a{
     font-size: 16px;
     font-weight:400;
     color:rgba(51,51,51,1);
