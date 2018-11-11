@@ -18,14 +18,21 @@ class Header extends Component {
     login = () => {
         this.setState({ visible: !this.state.visible });
     }
+    logins = () => {
+        this.setState({ visible: !this.state.visible });
+        this.setState({ visibles: !this.state.visibles });
+    }
 
     register = () => {
+        this.setState({ visibles: !this.state.visibles });
+    }
+    registers = () => {
+        this.setState({ visible: !this.state.visible });
         this.setState({ visibles: !this.state.visibles });
     }
 
     close = () => {
         this.setState({ visible: !this.state.visible });
-
     }
     closes = () => {
         this.setState({ visibles: !this.state.visibles });
@@ -55,7 +62,7 @@ class Header extends Component {
                         <div className="modal-bottom">
                             <input id="login" type="submit" value="登陆" />
                         </div>
-                        <div className="modal-bottom-2">没有账号?<span className="register">注册</span></div>
+                        <div className="modal-bottom-2">没有账号?<span onClick={this.registers} className="register">注册</span></div>
                     </div>
                 </div>
 
@@ -76,7 +83,7 @@ class Header extends Component {
                         <div className="modal-bottom">
                             <input id="register" type="submit" value="注册" />
                         </div>
-                        <div className="modal-bottom-2">已有账号?<span className="landing">登陆</span></div>
+                        <div className="modal-bottom-2">已有账号?<span onClick={this.logins} className="landing">登陆</span></div>
                     </div>
                 </div>
             </div>
